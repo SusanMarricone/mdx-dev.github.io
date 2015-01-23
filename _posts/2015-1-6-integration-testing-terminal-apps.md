@@ -55,7 +55,7 @@ type: (input, callback) =>
   @process.stdin.write "#{input}\n"
 ~~~
 
-Depending on the type of program you are testing, you will need to modify the way you get output. For example if your program asks for input, part of the output is your question or prompt. Other programs don't have interaction and just output.
+Depending on the type of program you are testing, you will need to modify the way you get output. For example if your program asks for input, part of the output is your question or prompt. Other programs don't have interaction, just output.
 
 ~~~ coffeescript
 # Subtract 2
