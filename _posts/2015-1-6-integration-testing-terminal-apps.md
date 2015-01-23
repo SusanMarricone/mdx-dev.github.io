@@ -6,7 +6,7 @@ description: "Test your node command line apps using cucumber with ease."
 tags: [javascript, node, cucumber, cucumberjs, testing]
 ---
 
-You might have seen [Aruba by Cucumber](https://github.com/cucumber/aruba) that helps you test your command line apps. However, if you need any extra steps you'll need to write those in Ruby. If your application is JavaScript you might not want to add an extra language to your stack. For this example we are going to be using [cucumber.js](https://github.com/cucumber/cucumber-js).
+You might have seen [Aruba by Cucumber](https://github.com/cucumber/aruba), which helps you test your command line apps. However, if you need any extra steps, you'll need to write those in Ruby. If your application is in JavaScript you, might not want to add an extra language to your stack. For this example, we are going to be using [cucumber.js](https://github.com/cucumber/cucumber-js).
 
 I decided to whip up a new command line app that has some interaction. It has three commands:
 * add {ingredient}
@@ -15,7 +15,7 @@ I decided to whip up a new command line app that has some interaction. It has th
 
 ## Running your app
 
-First things first we need to create the scenario that actually runs youru script. In your "world" you need to spawn a new process, and save all the output.
+First things first we need to create the scenario that actually runs your script. In your "world" you need to spawn a new process and save all the output.
 
 ~~~ coffeescript
 # ./features/step_definitions/terminalStepDefinitions.coffee
@@ -43,7 +43,7 @@ class World
       @output.push data.toString() # store raw data
 ~~~
 
-You'll notice the `waitForOutput`, we'll get to that in a bit.
+You'll notice the `waitForOutput`- we'll get to that in a bit.
 
 ## Input and Output
 
@@ -55,7 +55,7 @@ type: (input, callback) =>
   @process.stdin.write "#{input}\n"
 ~~~
 
-Depending on the type of program you are testing, you will need to modify the way you get output. For example if your program asks for input, part of the output is your question or prompt. Other programs don't have interaction and just output.
+Depending on the type of program you are testing, you will need to modify the way you get output. For example if your program asks for input, part of the output is your question or prompt. Other programs don't have interaction, just output.
 
 ~~~ coffeescript
 # Subtract 2
@@ -67,9 +67,9 @@ getOutput: (callback) =>
 
 ## Waiting for output
 
-Some processes take a long time, for example when you hit a database or a third party service. So waiting for output is necessary to get correct output. However, this isn't as magical as I've made it out to be. We see how much output we currently have, and keep checking until it increases by at least one.
+Some processes take a long time; for example, when you hit a database or a third party service. So waiting for output is necessary to get correct output. However, this isn't as magical as I've made it out to be. We see how much output we currently have, and keep checking until it increases by at least one.
 
-The first step is to see how many we currently have and pass that into the real function. Additionally, you may pass in a a date object if you want this to timeout after a given amount of time.
+The first step is to see how many we currently have and pass that into the real function. Additionally, you may pass in a date object if you want this to timeout after a given amount of time.
 
 ~~~ coffeescript
 waitForOutput: (callback) =>
@@ -88,6 +88,6 @@ _waitForOutput: (oldOutputLength, callback) =>
 
 ## Conclusion
 
-Given this new world class you can make easy to use step definitions specific to your application that runs programs, types, and gets output. This allows you to test virtually any command line interface.
+Given this new world class you can make easy-to-use step definitions specific to your application that runs programs, types, and gets output. This allows you to test virtually any command line interface.
 
 I created a repo to demonstrate this process and it's available on [Github](https://github.com/blainesch/shopping-list).
