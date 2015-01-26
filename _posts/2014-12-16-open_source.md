@@ -11,7 +11,7 @@ You've used open source software. We all have. Projects like [Bootstrap](https:/
 
 ## Why Contribute
 
-Besides all of us using these open source projects, there are still plenty of reasons why you should consider giving back to the community. When you contribute you can learn new things, know how to use the open source software better, and get to know the amazing people who helped create it. You also get the warm fuzzy feeling knowing you helped other users. Lastly, it looks great on your Github profile!
+Besides all of us using these open source projects, there are plenty of reasons why you should consider giving back to the community. When you contribute you can learn new things, see how to use the open source software better, and get to know the amazing people who helped create it. You also get the warm fuzzy feeling knowing you helped other users. Lastly, it looks great on your Github profile!
 
 ## Finding Causes
 
@@ -33,7 +33,7 @@ You can find lots of [local meetups](http://www.meetup.com/) online that are eag
 
 #### Your favorite organizations
 
-You already have organizations you enjoy, why not give back to them? Software you use is the easiest to contribute to since you know how to use it, set it up, and how you'd change it already.
+You already have organizations you enjoy, why not give back to them? Software you use is the easiest to contribute to since you already know how to use it, set it up, and how you'd change it.
 
 #### Other Mentions
 
@@ -53,6 +53,6 @@ Now that you have a project, we need to find something good to be added.
 
 ### Need Help?
 
-If you are needing help reach out to others maintaining the project. You can view their Github profile to get their contact information, view their project website, or even their [Gitter Room](https://gitter.im). If you are willing to help, they are willing to work with you.
+If you need help, reach out to others maintaining the project. You can view their Github profile to get their contact information, view their project website, or even their [Gitter Room](https://gitter.im). If you are willing to help, they are willing to work with you.
 
 ## [Let's get started!](https://github.com/explore)
